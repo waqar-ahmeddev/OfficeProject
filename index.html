@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tailwind Test</title>
+
+  <!-- Tailwind Output -->
+  <link href="./output.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 flex items-center justify-center h-screen">
+
+  <div class="bg-white p-6 rounded-2xl shadow-lg text-center space-y-4">
+
+    <!-- TEXT TEST -->
+    <h1 class="text-2xl font-bold text-blue-600">
+      Tailwind Working ✅
+    </h1>
+
+    <!-- BUTTON TEST -->
+    <button class="bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600">
+      Click Me
+    </button>
+
+    <!-- SVG ICON TEST -->
+    <div class="flex justify-center">
+      <svg xmlns="http://www.w3.org/2000/svg" 
+           class="w-8 h-8 text-red-500" 
+           fill="none" 
+           viewBox="0 0 24 24" 
+           stroke="currentColor">
+        <path stroke-linecap="round" 
+              stroke-linejoin="round" 
+              stroke-width="2" 
+              d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+      </svg>
+    </div>
+
+  </div>
+    <script src="https://cdn.tailwindcss.com"></script>
+   <script src="script.js"></script>
+</body>
+</html>

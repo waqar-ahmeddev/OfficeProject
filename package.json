@@ -1,0 +1,27 @@
+{
+  "dependencies": {
+    "@tailwindcss/cli": "^4.2.4",
+    "@tailwindcss/postcss": "^4.2.4",
+    "postcss": "^8.5.12",
+    "tailwindcss": "^4.2.4"
+  },
+  "name": "officeproject",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/waqar-ahmeddev/OfficeProject.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/waqar-ahmeddev/OfficeProject/issues"
+  },
+  "homepage": "https://github.com/waqar-ahmeddev/OfficeProject#readme"
+}
