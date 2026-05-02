@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body class="bg-[#F8FAFC]">
+    
+  <div class="flex h-screen overflow-y-auto">
+    <div class=" sticky top-0 h-screen  bg-[#1E293B] text-slate-300 flex flex-col justify-between">
+  <div>
+    <!-- Logo Section -->
+    <div class="p-6 flex items-center gap-3">
+      <div class="bg-blue-600 p-2 rounded-lg text-white">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-6 h-6">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 21h19.5m-18-18v18m10.5-18v18m6-13.5V21M6.75 6.75h.75m-.75 3h.75m-.75 3h.75m3-6h.75m-.75 3h.75m-.75 3h.75M6.75 21v-3.375c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21M3 3h12m-.75 4.5H21m-3.75 3.75h.008v.008h-.008v-.008Zm0 3h.008v.008h-.008v-.008Zm0 3h.008v.008h-.008v-.008Z" />
+        </svg>
+      </div>
+      <div>
+        <h1 class="text-white font-bold text-lg leading-none">HostelOS</h1>
+        <p class="text-xs text-slate-400 mt-1">Admin</p>
+      </div>
+    </div>
+
+    <!-- Navigation Buttons -->
+ <!-- Navigation Buttons -->
+<nav class="mt-4 px-4 space-y-1">
+  <!-- Dashboard (Active State) -->
+  <button class="w-full flex items-center gap-3 text-slate-400 hover:text-white hover:bg-slate-900 px-4 py-3 rounded-xl transition-all duration-200 group">
+    <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zM14 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zM14 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z" />
+    </svg>
+    <span class="font-medium text-left">Dashboard</span>
+  </button>
+
+  <!-- Rooms (Hover Effect) -->
+  <button class="w-full flex items-center gap-3 text-slate-400 hover:text-white hover:bg-slate-900 px-4 py-3 rounded-xl transition-all duration-200 group">
+    <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 group-hover:scale-110 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
+    </svg>
+    <span class="text-left">Rooms</span>
+  </button>
+
+  <!-- Students & Staff -->
+  <button class="w-full flex items-center gap-3 text-slate-400 hover:text-white hover:bg-slate-900 px-4 py-3 rounded-xl transition-all duration-200 group">
+    <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 group-hover:scale-110 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z" />
+    </svg>
+    <span class="text-left">Students & Staff</span>
+  </button>
+
+  <!-- Movement -->
+  <button class="w-full flex items-center gap-3 text-slate-400 hover:text-white hover:bg-slate-900 px-4 py-3 rounded-xl transition-all duration-200 group">
+    <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 group-hover:scale-110 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
+    </svg>
+    <span class="text-left">Movement</span>
+  </button>
+
+  <!-- Finance -->
+  <button class="w-full flex items-center gap-3 text-slate-400 hover:text-white hover:bg-slate-900 px-4 py-3 rounded-xl transition-all duration-200 group">
+    <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 group-hover:scale-110 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+    </svg>
+    <span class="text-left">Finance</span>
+  </button>
+
+  <!-- Complaints -->
+  <button class="w-full flex items-center gap-3 bg-blue-600 text-white text-slate-400 hover:text-white hover:bg-slate-900 px-4 py-3 rounded-xl transition-all duration-200 group">
+    <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 group-hover:scale-110 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z" />
+    </svg>
+    <span class="text-left">Complaints</span>
+  </button>
+ 
+  <!-- Calendar -->
+  <button class="w-full flex items-center gap-3 text-slate-400 hover:text-white hover:bg-slate-900 px-4 py-3 rounded-xl transition-all duration-200 group">
+    <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 group-hover:scale-110 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+    </svg>
+    <span class="text-left">Calendar</span>
+  </button>
+  
+</nav>
+
+  </div>
+  <div class="p-6 border-t border-slate-700">
+    <button id="sign-out" class="w-full flex items-center gap-3 text-slate-400 hover:text-white hover:bg-slate-900 px-4 py-3 rounded-xl transition-all duration-200 group">
+      <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 group-hover:scale-110 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1" />
+      </svg>
+      <spanclass="text-left" style="cursor:pointer;">Sign out</span>
+    </button>
+  </div>
+   </div>
+   <div class="flex flex-col">
+    <div class="flex flex-col">
+        <h1 class="font-bold text-5xl ml-6 mt-20">Complaints</h1>
+        <p class="mt-1 ml-6 text-gray-500">Manage student-reported issues and their status.</p>
+    </div>
+    <!-- Main Parent: Jo teeno columns ko side-by-side rakhega -->
+<div class="flex gap-10 mt-10 items-start">
+
+    <!-- Column 1: Submitted -->
+    <div class="flex flex-col gap-4 w-80 ml-6">
+        <div class="flex items-center justify-between">
+            <div class="flex items-center gap-2 text-red-500">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-5">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m-9.303 3.376c-.866 1.5.217 3.374 1.948 3.374h14.71c1.73 0 2.813-1.874 1.948-3.374L13.949 3.378c-.866-1.5-3.032-1.5-3.898 0L2.697 16.126ZM12 15.75h.007v.008H12v-.008Z" />
+                </svg>
+                <h1 class="font-bold text-slate-800 text-3xl">Submitted</h1>
+            </div>
+            <span class="bg-gray-100 rounded-full px-2 py-0.5 text-md">0</span>
+        </div>
+        <!-- Empty Box -->
+        <div class="border-2 border-dashed border-gray-200 rounded-2xl h-32 flex items-center justify-center text-gray-400">
+            Empty
+        </div>
+    </div>
+
+    <!-- Column 2: In Progress -->
+ <div class="flex flex-col gap-4 w-80 ml-6">
+    <!-- Column Header -->
+    <div class="flex items-center justify-between">
+        <div class="flex items-center gap-2 text-orange-500">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-5">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+            </svg>
+            <h1 class="font-bold text-slate-800 text-xl">In Progress</h1>
+        </div>
+        <span class="bg-gray-100 text-gray-500 rounded-full px-2 py-0.5 text-sm">1</span>
+    </div>
+
+    <!-- Card Box -->
+    <div class="bg-white shadow-sm border border-gray-100 rounded-2xl p-5 space-y-4">
+        
+        <!-- Icon and Title -->
+        <div class="flex items-center gap-3">
+            <div class="bg-blue-50 p-2 rounded-lg text-blue-600">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M8.288 15.038a5.25 5.25 0 0 1 7.424 0M5.106 11.856c3.807-3.808 9.98-3.808 13.788 0M1.924 8.674c5.565-5.565 14.587-5.565 20.152 0M12.53 18.22l-.53.53-.53-.53a.75.75 0 0 1 1.06 0Z" />
+                </svg>
+            </div>
+            <div>
+                <h1 class="font-bold text-slate-900 leading-tight">Slow Wifi In A-Block</h1>
+                <p class="text-sm text-gray-400">Aarav Sharma · WiFi</p>
+            </div>
+        </div>
+
+        <!-- Description -->
+        <p class="text-slate-600 text-sm leading-relaxed">
+            Speed drops below 1 Mbps after 9pm.
+        </p>
+
+        <!-- Dropdown Section -->
+        <div class="relative">
+            <!-- Dropdown Button -->
+            <div class="w-full p-2.5 border border-gray-100 rounded-xl flex items-center justify-between bg-gray-50/50 cursor-pointer">
+                <span class="text-slate-700 text-sm font-medium">In Progress</span>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-4 h-4 text-gray-400">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+                </svg>
+            </div>
+
+            <!-- Dropdown Menu (Overlay) -->
+            <!-- Real project mein is pe 'hidden' class hogi jo JS se remove hogi -->
+            <div class="absolute left-0 right-0 mt-2 bg-white border border-gray-100 rounded-2xl shadow-xl z-10 py-2">
+                <div class="px-4 py-2.5 hover:bg-gray-50 text-slate-500 text-sm cursor-pointer pl-10">
+                    Submitted
+                </div>
+                <div class="px-4 py-2.5 hover:bg-gray-50 text-slate-900 text-sm font-semibold cursor-pointer flex items-center relative">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="3" stroke="currentColor" class="w-4 h-4 text-slate-800 absolute left-3">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" />
+                    </svg>
+                    <span class="pl-6">In Progress</span>
+                </div>
+                <div class="px-4 py-2.5 hover:bg-gray-50 text-slate-500 text-sm cursor-pointer pl-10">
+                    Resolved
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</div>
+
+    <!-- Column 3: Resolved -->
+   <div class="flex flex-col gap-4 w-80 ml-6">
+    <!-- Header -->
+    <div class="flex items-center justify-between">
+        <div class="flex items-center gap-2 text-green-500">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="size-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+            <h1 class="font-bold text-slate-800 text-xl">Resolved</h1>
+        </div>
+        <span class="bg-gray-100 text-gray-500 rounded-full px-2 py-0.5 text-xs">1</span>
+    </div>
+
+    <!-- Card -->
+    <div class="bg-white shadow-sm border border-gray-100 rounded-2xl p-5">
+        
+        <!-- Icon & Title -->
+        <div class="flex items-center gap-3 mb-4">
+            <div class="bg-blue-50 p-2.5 rounded-2xl text-blue-500">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M11.423 19.007a6.621 6.621 0 01-1.282-.573l-4.831 4.83a.75.75 0 01-1.06-1.06l4.83-4.83a6.621 6.621 0 01-.573-1.282M14.25 5.583V2.25M14.25 21.75v-3.333M21.75 14.25h-3.333M5.583 14.25H2.25M19.303 19.303l-2.357-2.357M19.303 9.197l-2.357 2.357M9.197 19.303l2.357-2.357M9.197 9.197l2.357 2.357" />
+                </svg>
+            </div>
+            <div>
+                <h1 class="font-bold text-slate-900 text-lg">Leaky tap</h1>
+                <p class="text-sm text-gray-400">Priya Patel · Plumbing</p>
+            </div>
+        </div>
+
+        <!-- Description -->
+        <p class="text-slate-600 text-sm mb-4">Bathroom tap won't shut off.</p>
+
+        <!-- Status Button (JS Toggle) -->
+        <button id="res-btn" class="w-full p-3 border-2 border-blue-500 rounded-xl flex items-center justify-between bg-white">
+            <span class="text-slate-700 text-sm font-medium">Resolved</span>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-4 h-4 text-gray-400">
+                <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+            </svg>
+        </button>
+
+        <!-- Options List (Default Hidden) -->
+        <div id="res-options" class="hidden mt-2 border border-gray-100 rounded-xl bg-white shadow-lg overflow-hidden">
+            <div class="px-4 py-2 hover:bg-gray-50 text-slate-600 text-sm cursor-pointer">Submitted</div>
+            <div class="px-4 py-2 hover:bg-gray-50 text-slate-600 text-sm cursor-pointer">In Progress</div>
+            <div class="px-4 py-2 bg-gray-50 text-slate-900 text-sm font-bold">Resolved</div>
+        </div>
+        
+    </div>
+</div>
+
+</div>
+    </div>
+   </div>
+   <script src="https://cdn.tailwindcss.com"></script>
+  <script src="script.js"></script>
+</body>
+</html>
