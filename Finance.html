@@ -4,95 +4,93 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
 <body class="bg-[#F8FAFC]">
   <div class="flex h-screen overflow-y-auto">
-    <div class=" sticky top-0 h-screen  bg-[#1E293B] text-slate-300 flex flex-col justify-between">
+   <div class="sticky top-0 h-screen bg-[#111827] text-slate-300 flex flex-col justify-between w-64 border-r border-slate-800">
+
   <div>
     <!-- Logo Section -->
-    <div class="p-6 flex items-center gap-3">
-      <div class="bg-blue-600 p-2 rounded-lg text-white">
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-6 h-6">
-          <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 21h19.5m-18-18v18m10.5-18v18m6-13.5V21M6.75 6.75h.75m-.75 3h.75m-.75 3h.75m3-6h.75m-.75 3h.75m-.75 3h.75M6.75 21v-3.375c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21M3 3h12m-.75 4.5H21m-3.75 3.75h.008v.008h-.008v-.008Zm0 3h.008v.008h-.008v-.008Zm0 3h.008v.008h-.008v-.008Z" />
-        </svg>
+    <div class="p-6 flex items-center gap-4">
+      <div class="bg-blue-500 p-2.5 rounded-xl text-white shadow-lg">
+        <!-- Hostel Building Icon -->
+        <i class="fa-solid fa-hotel text-lg"></i>
       </div>
       <div>
-        <h1 class="text-white font-bold text-lg leading-none">HostelOS</h1>
-        <p class="text-xs text-slate-400 mt-1">Admin</p>
+        <h1 class="text-white font-bold text-xl tracking-tight">HostelOS</h1>
+        <p class="text-xs text-slate-500 font-medium">Admin</p>
       </div>
     </div>
 
-    <!-- Navigation Buttons -->
- <!-- Navigation Buttons -->
-<nav class="mt-4 px-4 space-y-1">
-  <!-- Dashboard (Active State) -->
-  <button class="w-full flex items-center gap-3 text-slate-400 hover:text-white hover:bg-slate-900 px-4 py-3 rounded-xl transition-all duration-200 group">
-    <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zM14 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zM14 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z" />
-    </svg>
-    <span class="font-medium text-left">Dashboard</span>
-  </button>
+    <!-- Divider Line -->
+    <div class="border-t border-slate-800 mx-0 mb-6"></div>
 
-  <!-- Rooms (Hover Effect) -->
-  <button class="w-full flex items-center gap-3 text-slate-400 hover:text-white hover:bg-slate-900 px-4 py-3 rounded-xl transition-all duration-200 group">
-    <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 group-hover:scale-110 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
-    </svg>
-    <span class="text-left">Rooms</span>
-  </button>
+    <!-- NAVIGATION -->
+    <nav class="px-4 space-y-2">
 
-  <!-- Students & Staff -->
-  <button class="w-full flex items-center gap-3 text-slate-400 hover:text-white hover:bg-slate-900 px-4 py-3 rounded-xl transition-all duration-200 group">
-    <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 group-hover:scale-110 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z" />
-    </svg>
-    <span class="text-left">Students & Staff</span>
-  </button>
+      <!-- Dashboard -->
+      <a href="Dashboard.html"
+         class="flex items-center gap-4 text-slate-400 hover:text-white hover:bg-slate-800/50 px-4 py-3 rounded-xl transition-all">
+        <i class="fa-solid fa-border-all text-lg w-6"></i>
+        <span class="font-medium">Dashboard</span>
+      </a>
 
-  <!-- Movement -->
-  <button class="w-full flex items-center gap-3 text-slate-400 hover:text-white hover:bg-slate-900 px-4 py-3 rounded-xl transition-all duration-200 group">
-    <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 group-hover:scale-110 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
-    </svg>
-    <span class="text-left">Movement</span>
-  </button>
+      <!-- Rooms -->
+      <a href="Rooms.html"
+         class="flex items-center gap-4 text-slate-400 hover:text-white hover:bg-slate-800/50 px-4 py-3 rounded-xl transition-all">
+        <i class="fa-solid fa-door-closed text-lg w-6"></i>
+        <span class="font-medium">Rooms</span>
+      </a>
 
-  <!-- Finance -->
-  <button class="w-full flex items-center gap-3 bg-blue-600 text-white text-slate-400 hover:text-white hover:bg-slate-900 px-4 py-3 rounded-xl transition-all duration-200 group">
-    <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 group-hover:scale-110 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-    </svg>
-    <span class="text-left">Finance</span>
-  </button>
+      <!-- Students -->
+      <a href="Student&staff.html"
+         class="flex items-center gap-4 text-slate-400 hover:text-white hover:bg-slate-800/50 px-4 py-3 rounded-xl transition-all">
+        <i class="fa-regular fa-user text-lg w-6"></i>
+        <span class="font-medium">Students & Staff</span>
+      </a>
 
-  <!-- Complaints -->
-  <button class="w-full flex items-center gap-3 text-slate-400 hover:text-white hover:bg-slate-900 px-4 py-3 rounded-xl transition-all duration-200 group">
-    <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 group-hover:scale-110 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z" />
-    </svg>
-    <span class="text-left">Complaints</span>
-  </button>
+      <!-- Movement -->
+      <a href="Movement.html"
+         class="flex items-center gap-4 text-slate-400 hover:text-white hover:bg-slate-800/50 px-4 py-3 rounded-xl transition-all">
+        <i class="fa-solid fa-bolt-lightning text-lg w-6"></i>
+        <span class="font-medium">Movement</span>
+      </a>
 
-  <!-- Calendar -->
-  <button class="w-full flex items-center gap-3 text-slate-400 hover:text-white hover:bg-slate-900 px-4 py-3 rounded-xl transition-all duration-200 group">
-    <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 group-hover:scale-110 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
-    </svg>
-    <span class="text-left">Calendar</span>
-  </button>
-  
-</nav>
+      <!-- Finance -->
+      <a href="Finance.html"
+         class="flex items-center gap-4 px-4 py-4 rounded-2xl bg-blue-600 text-white shadow-xl shadow-blue-900/20">
+        <i class="fa-regular fa-folder-open text-lg w-6"></i>
+        <span class="font-medium">Finance</span>
+      </a>
 
+      <!-- Complaints -->
+      <a href="Complaints.html"
+         class="flex items-center gap-4 text-slate-400 hover:text-white hover:bg-slate-800/50 px-4 py-3 rounded-xl transition-all">
+        <i class="fa-regular fa-comment-dots text-lg w-6"></i>
+        <span class="font-medium">Complaints</span>
+      </a>
+
+      <!-- Calendar (ACTIVE STATE - Blue Background) -->
+      <a href="Calendar.html"
+         class="flex items-center gap-4 text-slate-400 hover:text-white hover:bg-slate-800/50 px-4 py-3 rounded-xl transition-all">
+        <i class="fa-regular fa-calendar text-lg w-6"></i>
+        <span class="font-semibold">Calendar</span>
+      </a>
+
+    </nav>
   </div>
-  <div class="p-6 border-t border-slate-700">
-    <button id="sign-out" class="w-full flex items-center gap-3 text-slate-400 hover:text-white hover:bg-slate-900 px-4 py-3 rounded-xl transition-all duration-200 group">
-      <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 group-hover:scale-110 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1" />
-      </svg>
-      <spanclass="text-left" style="cursor:pointer;">Sign out</span>
-    </button>
+
+  <!-- SIGN OUT SECTION -->
+  <div class="p-6 border-t border-slate-800">
+    <a href="index.html"
+       class="flex items-center gap-4 text-slate-400 hover:text-white hover:bg-slate-800/50 px-4 py-3 rounded-xl transition-all">
+      <i class="fa-solid fa-arrow-right-from-bracket text-lg w-6"></i>
+      <span class="font-medium">Sign out</span>
+    </a>
   </div>
-   </div>
+
+</div>
    <!-- Content Area -->
 <div class="flex-1 p-8 bg-gray-50 min-h-screen overflow-y-auto">
   
