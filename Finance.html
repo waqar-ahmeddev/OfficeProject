@@ -93,6 +93,130 @@
     </button>
   </div>
    </div>
+   <!-- Content Area -->
+<div class="flex-1 p-8 bg-gray-50 min-h-screen overflow-y-auto">
+  
+  <!-- Header Section -->
+  <div class="mb-8">
+    <h2 class="text-3xl font-bold text-[#1E293B]">Finance</h2>
+    <p class="text-slate-500 mt-1">Snapshot of fees collected, dues, and expenses.</p>
+  </div>
+
+  <!-- Stats Cards -->
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+    <!-- Monthly Income -->
+    <div class="bg-white p-8 rounded-3xl border border-gray-100 shadow-sm">
+      <div class="w-12 h-12 bg-green-50 rounded-xl flex items-center justify-center mb-6">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-green-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
+        </svg>
+      </div>
+      <p class="text-slate-500 font-medium">Monthly Income</p>
+      <h3 class="text-4xl font-bold text-[#1E293B] mt-2">Rs 48,000</h3>
+    </div>
+
+    <!-- Pending Fees -->
+    <div class="bg-white p-8 rounded-3xl border border-gray-100 shadow-sm">
+      <div class="w-12 h-12 bg-orange-50 rounded-xl flex items-center justify-center mb-6">
+        <span class="text-orange-400 text-xl font-bold">!</span>
+      </div>
+      <p class="text-slate-500 font-medium">Pending Fees</p>
+      <h3 class="text-4xl font-bold text-[#1E293B] mt-2">Rs 36,000</h3>
+    </div>
+
+    <!-- Active Expenses -->
+    <div class="bg-white p-8 rounded-3xl border border-gray-100 shadow-sm">
+      <div class="w-12 h-12 bg-blue-50 rounded-xl flex items-center justify-center mb-6">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-blue-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z" />
+        </svg>
+      </div>
+      <p class="text-slate-500 font-medium">Active Expenses</p>
+      <h3 class="text-4xl font-bold text-[#1E293B] mt-2">Rs 87,500</h3>
+    </div>
+  </div>
+
+  <!-- Invoices Table Section -->
+  <div class="bg-white rounded-3xl border border-gray-100 shadow-sm overflow-hidden">
+    <div class="p-6 border-b border-gray-50">
+      <h3 class="text-lg font-bold text-[#1E293B]">All invoices</h3>
+    </div>
+    
+    <div class="overflow-x-auto">
+      <table class="w-full text-left">
+        <thead>
+          <tr class="text-[11px] font-bold text-slate-400 uppercase tracking-widest border-b border-gray-50">
+            <th class="px-8 py-4">Student</th>
+            <th class="px-8 py-4">Month</th>
+            <th class="px-8 py-4 text-right">Amount</th>
+            <th class="px-8 py-4 text-center">Status</th>
+          </tr>
+        </thead>
+        <tbody class="divide-y divide-gray-50">
+          <!-- Row 1 -->
+          <tr class="hover:bg-slate-50 transition-colors">
+            <td class="px-8 py-5 text-sm font-bold text-slate-700">Aarav Sharma</td>
+            <td class="px-8 py-5 text-sm text-slate-500">March 2026</td>
+            <td class="px-8 py-5 text-sm font-bold text-slate-700 text-right">Rs 12,000</td>
+            <td class="px-8 py-5 text-center">
+              <span class="px-3 py-1 bg-green-100 text-green-600 text-[10px] font-bold rounded-full">PAID</span>
+            </td>
+          </tr>
+          <!-- Row 2 -->
+          <tr class="hover:bg-slate-50 transition-colors">
+            <td class="px-8 py-5 text-sm font-bold text-slate-700">Aarav Sharma</td>
+            <td class="px-8 py-5 text-sm text-slate-500">April 2026</td>
+            <td class="px-8 py-5 text-sm font-bold text-slate-700 text-right">Rs 12,000</td>
+            <td class="px-8 py-5 text-center">
+              <span class="px-3 py-1 bg-green-100 text-green-600 text-[10px] font-bold rounded-full">PAID</span>
+            </td>
+          </tr>
+           <tr class="hover:bg-slate-50 transition-colors">
+            <td class="px-8 py-5 text-sm font-bold text-slate-700">Aarav Sharma</td>
+            <td class="px-8 py-5 text-sm text-slate-500">April 2026</td>
+            <td class="px-8 py-5 text-sm font-bold text-slate-700 text-right">Rs 12,000</td>
+            <td class="px-8 py-5 text-center">
+              <span class="px-3 py-1 bg-red-100 text-red-500 text-[10px] font-bold rounded-full">Due</span>
+            </td>
+          </tr>
+           <tr class="hover:bg-slate-50 transition-colors">
+            <td class="px-8 py-5 text-sm font-bold text-slate-700">Priya Patel</td>
+            <td class="px-8 py-5 text-sm text-slate-500">july 2025</td>
+            <td class="px-8 py-5 text-sm font-bold text-slate-700 text-right">Rs 12,000</td>
+            <td class="px-8 py-5 text-center">
+              <span class="px-3 py-1 bg-green-100 text-green-600 text-[10px] font-bold rounded-full">PAID</span>
+            </td>
+          </tr>
+           <tr class="hover:bg-slate-50 transition-colors">
+            <td class="px-8 py-5 text-sm font-bold text-slate-700">Rohan Mehta</td>
+            <td class="px-8 py-5 text-sm text-slate-500">August 2024</td>
+            <td class="px-8 py-5 text-sm font-bold text-slate-700 text-right">Rs 12,000</td>
+            <td class="px-8 py-5 text-center">
+              <span class="px-3 py-1 bg-green-100 text-green-600 text-[10px] font-bold rounded-full">PAID</span>
+            </td>
+          </tr>
+           <tr class="hover:bg-slate-50 transition-colors">
+            <td class="px-8 py-5 text-sm font-bold text-slate-700">Ananya Lyer</td>
+            <td class="px-8 py-5 text-sm text-slate-500">March 2026</td>
+            <td class="px-8 py-5 text-sm font-bold text-slate-700 text-right">Rs 12,000</td>
+            <td class="px-8 py-5 text-center">
+              <span class="px-3 py-1 bg-green-100 text-green-600 text-[10px] font-bold rounded-full">Due</span>
+            </td>
+          </tr>
+           <tr class="hover:bg-slate-50 transition-colors">
+            <td class="px-8 py-5 text-sm font-bold text-slate-700">Vikram Singh</td>
+            <td class="px-8 py-5 text-sm text-slate-500">March 2026</td>
+            <td class="px-8 py-5 text-sm font-bold text-slate-700 text-right">Rs 12,000</td>
+            <td class="px-8 py-5 text-center">
+              <span class="px-3 py-1 bg-green-100 text-green-600 text-[10px] font-bold rounded-full">PAID</span>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+</div>
    </div>
     <script src="https://cdn.tailwindcss.com"></script>
   <script src="script.js"></script>
